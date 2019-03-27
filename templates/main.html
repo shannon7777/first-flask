@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Master template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title></title>
+  <!-- Bootstrap 4.1.3 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-  {% if signed_in %}
-    <h1>- - - NAVBAR - - -</h1>
-    <h1>Welcome back!</h1>
-    <button>Sign Out</button>
-  {% else %}
-    <h1>- - - NAVBAR - - -</h1>
-    <button>Sign In</button>
-    <button>Sign Up</button>
-  {% endif %}
-
-  <!-- template contents inside here -->
-  {% block content %}
-
-  {% endblock %}
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+  </div>
 </body>
-</html>
+</html

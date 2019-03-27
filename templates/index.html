@@ -1,9 +1,9 @@
 {% extends "main.html" %}
-
 {% block content %}
-
-    <h1>Homepage content heres</h1>
-    <a href="{{ url_for('contact') }}">Contact us</a>
-
+{% if first_name %}
+  <p>Thanks for contacting us, {{first_name}}</p>
+{% endif %}
+<h1>Homepage content here</h1>
+<a href="{{ url_for('contact') }}" class="btn">Contact Us</a>
 {% endblock %}
  
