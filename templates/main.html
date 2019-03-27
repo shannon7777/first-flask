@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Master template</title>
+</head>
+
+<body>
+  {% if signed_in %}
+    <h1>- - - NAVBAR - - -</h1>
+    <h1>Welcome back!</h1>
+    <button>Sign Out</button>
+  {% else %}
+    <h1>- - - NAVBAR - - -</h1>
+    <button>Sign In</button>
+    <button>Sign Up</button>
+  {% endif %}
+
+  <!-- template contents inside here -->
+  {% block content %}
+
+  {% endblock %}
+</body>
+</html>
